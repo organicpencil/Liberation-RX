@@ -106,7 +106,7 @@ class Params
 		title = $STR_PARAMS_DIFFICULTY;
 		values[] = { 0.5, 0.75, 1, 1.25, 1.5, 2, 4, 10 };
 		texts[] = { $STR_PARAMS_DIFFICULTY1, $STR_PARAMS_DIFFICULTY2, $STR_PARAMS_DIFFICULTY3, $STR_PARAMS_DIFFICULTY4, $STR_PARAMS_DIFFICULTY5, $STR_PARAMS_DIFFICULTY6, $STR_PARAMS_DIFFICULTY7, $STR_PARAMS_DIFFICULTY8 };
-		default = 1;
+		default = 0.5;
 	};
 	class Aggressivity{
 		title = $STR_AGGRESSIVITY_PARAM;
@@ -172,7 +172,7 @@ class Params
 		title = $STR_TK_MODE;
 		values[] = { 0, 1, 2 };
 		texts[] = { $STR_TK_MODE_STRICT, $STR_TK_MODE_RELAX, $STR_PARAMS_DISABLED };
-		default = 0;
+		default = 2;
 	};
 	class TK_count {
 		title = $STR_TK_COUNT;
@@ -184,7 +184,7 @@ class Params
 		title = $STR_PARAM_PASSIVE_INCOME;
 		values[] = {1,0};
 		texts[] = { $STR_PARAMS_ENABLED, $STR_PARAMS_DISABLED };
-		default = 0;
+		default = 1;
 	};
 	class Civilians{
 		title = $STR_PARAMS_CIVILIANS;
@@ -196,7 +196,7 @@ class Params
 		title = $STR_PARAM_WILDLIFE;
 		values[] = {1,0};
 		texts[] = { $STR_PARAMS_ENABLED, $STR_PARAMS_DISABLED };
-		default = 1;
+		default = 0;
 	};
 	class Patrol{
 		title = $STR_PARAM_PATROL;
@@ -208,7 +208,7 @@ class Params
 		title = $STR_PARAM_TEAMKILL_PENALTY;
 		values[] = {1,0};
 		texts[] = { $STR_PARAMS_ENABLED, $STR_PARAMS_DISABLED };
-		default = 1;
+		default = 0;
 	};
 	class AmmoBounties{
 		title = $STR_AMMO_BOUNTIES;
@@ -226,7 +226,7 @@ class Params
 		title = $STR_HALO_PARAM;
 		values[] = {1,5,10,15,20,30,0};
 		texts[] = { $STR_HALO_PARAM1, $STR_HALO_PARAM2, $STR_HALO_PARAM3, $STR_HALO_PARAM4, $STR_HALO_PARAM5, $STR_HALO_PARAM6, $STR_PARAMS_DISABLED };
-		default = 1;
+		default = 0;
 	};
 	class BluforDefenders{
 		title = $STR_PARAM_BLUFOR_DEFENDERS;
@@ -250,13 +250,13 @@ class Params
 		title = $STR_PARAM_SQUAD_SIZE_START;
 		values[] = {0,1,2,3,4,5,6,7,8,9,10};
 		texts[] = {0,1,2,3,4,5,6,7,8,9,10};
-		default = 3;
+		default = 5;
 	};
 	class MaxSquadSize{
 		title = $STR_PARAM_SQUAD_SIZE;
-		values[] = {0,1,2,3,4,5,6,7,8,9,10};
-		texts[] = {0,1,2,3,4,5,6,7,8,9,10};
-		default = 7;
+		values[] = {0,1,2,3,4,5,6,7,8,9,10,60};
+		texts[] = {0,1,2,3,4,5,6,7,8,9,10,60};
+		default = 60;
 	};
 	class Space3 {
 		title = "";
@@ -274,13 +274,13 @@ class Params
 		title = $STR_PERMISSIONS_PARAM;
 		values[] = {1,0};
 		texts[] = { $STR_PARAMS_ENABLED, $STR_PARAMS_DISABLED };
-		default = 1;
+		default = 0;
 	};
 	class CleanupVehicles {
 		title = $STR_CLEANUP_PARAM;
 		values[] = { 0,1,2,4 };
 		texts[] = { $STR_PARAMS_DISABLED, $STR_CLEANUP_PARAM1, $STR_CLEANUP_PARAM2, $STR_CLEANUP_PARAM3 };
-		default = 1;
+		default = 4;
 	};
 	class Introduction {
 		title = $STR_PARAMS_INTRO;
@@ -304,7 +304,7 @@ class Params
 		title = "Enable the Admin Menu";
 		values[] = { 1, 0 };
 		texts[] = { $STR_YES, $STR_NO };
-		default = 1;
+		default = 0;
 	};
 	class Space4 {
 		title = "";

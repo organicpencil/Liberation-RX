@@ -7,26 +7,26 @@ GRLIB_squad_size_bonus = 0;
 if ((_score >=  0) && (_score < GRLIB_perm_inf)) then {_rank = "Private"};
 if ((_score >= GRLIB_perm_inf) && (_score < GRLIB_perm_log)) then {
 	_rank = "Corporal";
-	GRLIB_squad_size_bonus = 1;
+	GRLIB_squad_size_bonus = 5;
 };
 if ((_score >= GRLIB_perm_log) && (_score < GRLIB_perm_tank)) then {
 	_rank = "Sergeant";
-	GRLIB_squad_size_bonus = 2;
+	GRLIB_squad_size_bonus = 15;
 };
 if ((_score >= GRLIB_perm_tank) && (_score < GRLIB_perm_air)) then {
 	_rank = "Captain";
-	GRLIB_squad_size_bonus = 3;
+	GRLIB_squad_size_bonus = 25;
 };
 if ((_score >= GRLIB_perm_air) && (_score < GRLIB_perm_max)) then {
 	_rank = "Major";
-	GRLIB_squad_size_bonus = 4;
+	GRLIB_squad_size_bonus = 35;
 };
 if (_score >= GRLIB_perm_max) then {
 	_rank = "Colonel";
-	GRLIB_squad_size_bonus = 5;
+	GRLIB_squad_size_bonus = 45;
 };
 // if (_score >= 2 * GRLIB_perm_max) then {
-// 	GRLIB_squad_size_bonus = 6;
+// 	GRLIB_squad_size_bonus = 55;
 // };
 
 if ( (GRLIB_squad_size + GRLIB_squad_size_bonus) > GRLIB_max_squad_size) then {
